@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="condainer">
+        <h1>Tour Booking Form</h1>
+        <h2 id="note">Note:<sup>*</sup>Mandatory Feilds</h2>
+        <hr><br>
+        <label for="name" class="mandatory">Full Name :</label><br><br>
+        <input type="text" required class="inputBox" placeholder="Enter your Full Name"><br>
+        <br>
+        <label for="email" class="mandatory">Email Address :</label><br><br>
+        <input type="email" required class="inputBox" placeholder="Enter your Full Name"><br>
+        <br>
+        <label for="package" class="mandatory">Select Your Package :</label><br><br>
+        <select name="package" id="package" class="inputBox" class="mandatory">
+            <option value="SouthIndia">South India</option>
+            <option value="NorthIndia">North India</option>
+            <option value="goa">Goa</option>
+            <option value="jamu">Jamu</option>
+        </select><br>
+        <br>
+        <label for="date" class="mandatory">Date:</label><br>
+        <input type="date" required class="inputBox">
+        <br><br>
+        <label for="avilable" class="mandatory">What would you to avil?</label><br>
+        <input type="checkbox" value="bording" id="bording" name="avilable">
+        <label for="bording" class="available">Boarding</label>
+        <br> 
+        <input type="checkbox" value="food" id="food" name="avilable">
+        <label for="food" class="available">Food</label>
+        <br>
+        <input type="checkbox" value="sight seeing" id="sight seeing" name="avilable">
+        <label for="sight seeing" class="available">Sight Seeing</label><br>
+        <br>
+        <label for="tearms" class="mandatory">Tearms and Conditions:</label><br>
+        <input type="radio" name="tearms" id="agreed" value="agreed">
+        <label for="tearms" class="available">I Agree</label><br>
+        <input type="radio" name="tearms" id="disAgreed" value="disAgreed">
+        <label for="tearms" class="available">I DisAgree</label>
+        <br><br>
+        <button id="submit" class="submit">Book Now</button>
+        
+
+
+    </div>
+</body>
+</html>

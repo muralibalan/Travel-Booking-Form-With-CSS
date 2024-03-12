@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.condainer{
+    background-image: url(./img/travelform-background.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    padding: 20px; 
+}
+#note{
+    color: #ff002b;
+}
+.mandatory::after {
+    content: '*'; 
+    color: red; 
+    margin-right: 3px; 
+  }
+  .inputBox{
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .mandatory{
+    font-size: 20px;
+    color: rgb(46, 36, 21);
+    font-weight: bold;
+  }
+  input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+  }
+  .available:hover{
+    color: red;
+    font-size:30px ;
+  }
+  input[type="radio"]{
+    width: 30px;
+    height: 30px;
+  }
+  .available{
+    color:rgb(46, 36, 21) ;
+    font-weight: bold;
+  }
+  #submit{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: red;
+    border-radius: 5px;
+  }
+
+
