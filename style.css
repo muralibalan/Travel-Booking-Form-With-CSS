@@ -1,17 +1,27 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
 .condainer{
     background-image: url(./img/travelform-background.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
     color: white;
-    padding: 20px; 
+    padding: 15px; 
+}
+.form{
+  display:grid;
+  padding-left: 20px;
+}
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+label{
+  padding-top: 20px;
 }
 #note{
     color: #ff002b;
+    font-size: 24px;
+    padding-left: 20px;
 }
 .mandatory::after {
     content: '*'; 
@@ -19,37 +29,46 @@
     margin-right: 3px; 
   }
   .inputBox{
-    width: 350px;
-    height: 30px;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
+  }
+  .selectBox{
+    width: 30.5%;
+    height: 44px;
     font-size: 20px;
   }
   .mandatory{
-    font-size: 20px;
+    font-size: 24px;
     color: rgb(46, 36, 21);
     font-weight: bold;
   }
   input[type="checkbox"]{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
   }
   .available:hover{
     color: red;
     font-size:30px ;
   }
   input[type="radio"]{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    
   }
   .available{
     color:rgb(46, 36, 21) ;
-    font-weight: bold;
+    font-size: 24px;
   }
   #submit{
     width: 150px;
-    height: 40px;
+    height: 45px;
     font-size: 20px;
-    background-color: red;
+    background-color: #ff5100;
+    border: none;
     border-radius: 5px;
+    color: white;
   }
 
 
