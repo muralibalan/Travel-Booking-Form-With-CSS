@@ -1,4 +1,4 @@
-.condainer{
+.container{
     background-image: url(./img/travelform-background.png);
     background-size: cover;
     background-position: center;
@@ -6,7 +6,7 @@
     color: white;
     padding: 15px; 
 }
-.form{
+.formBox{
   display:grid;
   padding-left: 20px;
 }
