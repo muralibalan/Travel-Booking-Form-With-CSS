@@ -8,16 +8,17 @@
 </head>
 <body>
     <div class="condainer">
-        <span class="title">Tour Booking Form</span><br>
+        <h1 class="title">Tour Booking Form</h1><br>
         <span id="note">Note:<sup>*</sup>Mandatory Feilds</span>
         <hr>
         <form action="travel" class="form">
             <label for="name" class="mandatory">Full Name :</label>
-            <input type="text" required class="inputBox" placeholder="Enter your Full Name">  
+            <input type="text" required class="inputBox">  
             <label for="email" class="mandatory">Email Address :</label>
-            <input type="email" required class="inputBox" placeholder="Enter your Full Name">
+            <input type="email" required class="inputBox">
             <label for="package" class="mandatory">Select Your Package :</label>
             <select name="package" id="package" class="selectBox" class="mandatory">
+                <option value="SouthIndia">Select Package</option>
                 <option value="SouthIndia">South India</option>
                 <option value="NorthIndia">North India</option>
                 <option value="goa">Goa</option>
