@@ -59,6 +59,7 @@ label{
   .available{
     color:rgb(46, 36, 21) ;
     font-size: 24px;
+
   }
   #submit{
     width: 150px;
@@ -69,5 +70,10 @@ label{
     border-radius: 5px;
     color: white;
   }
+  /* .app{
+    appearance: none;
+    border: 1px solid black;
+    accent-color: red;
+  } */
 
 
