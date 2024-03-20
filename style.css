@@ -70,10 +70,12 @@ label{
     border-radius: 5px;
     color: white;
   }
-  /* .app{
+  .app{
     appearance: none;
     border: 1px solid black;
-    accent-color: red;
-  } */
+  }
+  .app:checked{
+    background-color: red;
+  }
 
 
