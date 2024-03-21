@@ -1,67 +1,59 @@
-.container{
-    background-image: url(./img/travelform-background.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
-    padding: 15px; 
-}
-.formBox{
-  display:grid;
-  padding-left: 20px;
-}
-.title{
-  padding-left: 20px;
-  display: inline;
-}
-label{
-  padding-top: 20px;
-}
-#note{
-    color: #ff002b;
-    font-size: 24px;
-    padding-left: 20px;
-}
-.mandatory::after {
-    content: '*'; 
-    color: red; 
-    margin-right: 3px; 
+  body{
+    margin: 0px;
+    padding: 0px;
   }
-  .inputBox{
+  .container{
+      background-image: url(./img/travelform-background.png);
+      background-size: cover;
+      background-position: center;
+      padding-top: 10px;
+  }
+  .headerBox{
+    width: 95%;
+    height: 80px;
+    border-bottom: 2px solid white;
+    margin-left: 20px;
+  }
+  .formBox{
+    display:grid;
+    padding-left: 20px;
+  }
+  .title{
+    color: white;
+    display: inline;
+  }
+  .note{
+      color: rgba(187,44,65,255);
+      font-size: 24px;
+      font-weight: bold;
+  }
+  sup{
+    color:rgba(187,44,65,255);
+  }
+  .inputBox,.selectBox{
     width: 30%;
-    height: 40px;
+    height: 30px;
     font-size: 20px;
+    margin-top: 12px;
   }
   .selectBox{
     width: 30.5%;
-    height: 44px;
-    font-size: 20px;
+    height: 38px;
   }
   .mandatory{
     font-size: 24px;
     color: rgb(46, 36, 21);
     font-weight: bold;
   }
-  input[type="checkbox"]{
+  .app,.inputRadio{
     width: 20px;
-    height: 20px;
-    padding: 5px;
-  }
-  .available:hover{
-    color: red;
-    font-size:30px ;
-  }
-  input[type="radio"]{
-    width: 20px;
-    height: 20px;
-    
+    height: 17px;
   }
   .available{
     color:rgb(46, 36, 21) ;
     font-size: 24px;
-
   }
-  #submit{
+  .submit{
     width: 150px;
     height: 45px;
     font-size: 20px;
@@ -69,13 +61,17 @@ label{
     border: none;
     border-radius: 5px;
     color: white;
+    margin-top: 10px;
   }
-  .app{
+  .app,.inputRadio{
     appearance: none;
-    border: 1px solid black;
+    border: 2px solid black;
   }
-  .app:checked{
-    background-color: red;
+  .app:checked,#agreed:checked{
+    background-color: rgb(47, 229, 22);
+  }
+  .inputRadio{
+    border-radius: 50%;
   }
 
 

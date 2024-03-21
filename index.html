@@ -7,16 +7,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- This is Total Container -->
     <div class="container">
-        <h1 class="title">Tour Booking Form</h1><br>
-        <span id="note">Note:<sup>*</sup>Mandatory Feilds</span>
-        <hr>
+        <!-- This is header -->
+        <div class="headerBox">
+            <h1 class="title">Tour Booking Form</h1><br>
+            <span class="note">Note:<sup>*</sup>Mandatory Feilds</span>
+         </div>
+        <!-- This is Form  -->
         <form action="travel" class="formBox">
-            <label for="name" class="mandatory">Full Name :</label>
+            <label for="name" class="mandatory">Full Name<sup>*</sup>:</label>
             <input type="text" required class="inputBox">  
-            <label for="email" class="mandatory">Email Address :</label>
+            <label for="email" class="mandatory">Email Address<sup>*</sup>:</label>
             <input type="email" required class="inputBox">
-            <label for="package" class="mandatory">Select Your Package :</label>
+            <label for="package" class="mandatory">Select Your Package<sup>*</sup>:</label>
+            <!-- This is DropDown List -->
             <select name="package" id="package" class="selectBox" class="mandatory">
                 <option value="SouthIndia">Select Package</option>
                 <option value="SouthIndia">South India</option>
@@ -24,10 +29,13 @@
                 <option value="goa">Goa</option>
                 <option value="jamu">Jamu</option>
             </select>
-            <label for="date" class="mandatory">Date:</label>
+            <label for="noPerson" class="mandatory">Number of Persons<sup>*</sup>:</label>
+            <input type="text" required class="inputBox"> 
+            <label for="date" class="mandatory">Date<sup>*</sup>:</label>
             <input type="date" required class="inputBox">
-            <label for="avilable" class="mandatory">What would you want to avail?</label>
-            <div>
+            <label for="avilable" class="mandatory">What would you want to avail?<sup>*</sup></label>
+            <div><br>
+                <!-- This is checkBox  -->
             <input type="checkbox" value="bording" id="bording" name="avilable" class="app">
             <label for="bording" class="available">Boarding</label>
              </div>
@@ -39,14 +47,11 @@
             <input type="checkbox" value="sight seeing" id="sight seeing" name="avilable" class="app">
             <label for="sight seeing" class="available">Sight Seeing</label>
             </div>
-            <label for="tearms" class="mandatory">Tearms and Conditions:</label>
+            <label for="tearms" class="mandatory">Tearms and Conditions<sup>*</sup></label>
             <div>
-            <input type="radio" name="tearms" id="agreed" value="agreed">
+                <!-- This is Radio Box -->
+            <input type="radio" name="tearms" id="agreed" value="agreed" class="inputRadio">
             <label for="tearms" class="available">I Agree</label>
-             </div>
-             <div>
-            <input type="radio" name="tearms" id="disAgreed" value="disAgreed">
-            <label for="tearms" class="available">I DisAgree</label>
              </div>
             <button id="submit" class="submit">Book Now</button>
          </form>
